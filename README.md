@@ -3,6 +3,8 @@ Get the imformation of movie's team as well as its producers and publishers.
 
 ## Main code
 * `main.py`
+* `movie_name_id`<br>
+    Get the name and id of a movie.<br>
 * `get_team`<br>
     Get the imformation of team members including director and actors.<br>
 * `get_company`<br>
@@ -14,11 +16,10 @@ Based on python3.5 and selenium, first need to install：<br>
 1. `selenium`<br>
 2. `phantomjs`<br>
 3. `mongodb`<br>
-4. `pyquery`<br>
 ## Operation instructions
-|star.sh|main.py|get_team.py & get_company.py|mongo_connect|
-|:------|:------|:---------------------------|:------------|
-|The first file to be executedto call auto_star.py|Initialize datas and then call get_team.py and get_company.py to get the imformation we want.Finally call mongo_connect to store the datas|the main code to crawl content we need|Put the content we have crawled into mongodb|
+|create folder|star.sh|main.py|
+|:------|:------|:------------|
+|Create a new void folder in current folder|The first file to be executedto call auto_star.py|Initialize datas and then call movie_name_id.py,get_team.py and get_company.py to get the imformation we want.At the end call mongo_connect to store the datas|
 ## Sample
 * For the [get_team.py](),let's take [西游降魔篇](http://movie.mtime.com/208325/fullcredits.html) as an example.
 * Get it\`s movie name from the folder first, and then enter person\`s page.
