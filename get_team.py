@@ -37,6 +37,8 @@ def crawler_team(movie_name,movie_id,i):
         browser.close()
         print("(_id + Movie_Name + year) only")
         print()
+        dic = {}
+        return dic
         # f.close()
         print()
     final_url += 'fullcredits.html'
