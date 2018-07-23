@@ -70,9 +70,11 @@ def crawler_company(movie_name,id,year_0):
         else:
             pass
     if count == 0:
+        dic = {}
         with open('./movie_failed_' + year_0 + '.txt', "a+")as w:
             w.writelines("Fail in name" + movie_name)
             w.write('\n')
+        return dic
 
 
 def get_company(urls, movie_name,id,year_0):
